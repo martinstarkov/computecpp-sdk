@@ -3,7 +3,7 @@ project (nbody)
 cmake_minimum_required(VERSION 3.2.2)
 
 set(CMAKE_VERBOSE_MAKEFILE ON)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/../cmake/Modules")
 
 find_package(OpenCL REQUIRED)
@@ -31,4 +31,5 @@ target_link_libraries(cinder_imgui cinder)
 
 add_subdirectory(game_of_life)
 add_subdirectory(mandelbrot)
+add_subdirectory(fluid)
 add_subdirectory(nbody)
